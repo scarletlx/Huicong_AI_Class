@@ -41,8 +41,8 @@ class LogisticRegression():
         num_samples, num_features = self.X.shape
         w = np.zeros(num_features)
 
-
         for i in range(self.max_iter):
+            batch_idxs = np.random.choice(num_samples, self.batch_size)
             batch_x = self.X[batch_idxs]
             batch_y = self.y[batch_idxs]
 
@@ -51,7 +51,6 @@ class LogisticRegression():
             loss = self.cost(y_pred, batch_y)
             w = self.gradient(grad, batch_x, w)
             print('iteration: {0}, w:{1}, loss is {2}'.format(i, w, loss))
-        batch_idxs = np.random.choice(num_samples, self.batch_size)
 
         positive = self.X[self.y == 1]
         negative = self.X[self.y == 0]

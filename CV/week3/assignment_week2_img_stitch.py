@@ -94,8 +94,8 @@ def img_stitch(img1, img2):
 
         print("simple stitch cost %f" % (simple - starttime))
         print("total cost %f" % (final - starttime))
-        cv2.imwrite("img_stitch/simplepanorma.jpg", direct)
-        cv2.imwrite("img_stitch/bestpanorma.jpg", warpImg)
+        cv2.imwrite("img_stitch/simplestitch.jpg", direct)
+        cv2.imwrite("img_stitch/beststitch.jpg", warpImg)
 
     else:
         print("not enough matches!")

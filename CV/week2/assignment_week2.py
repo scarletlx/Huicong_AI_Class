@@ -70,7 +70,7 @@ def medianBlur(img, kernel, padding_way):
 #       Your task: please complete pseudo code (it would be great if you hand in real code!) of this procedure.
 #
 
-
+"""
 # pseudo code
 def ransacMatching(A, B, threshold, d):
     # A & B: List of List
@@ -125,7 +125,7 @@ def ransacMatching(A, B, threshold, d):
         iterations += 1
 
     return homography
-
+"""
 #
 #
 # if __name__ == "__main__":
