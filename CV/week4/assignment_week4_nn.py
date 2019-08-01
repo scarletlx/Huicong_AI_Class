@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import numpy as np
 import sklearn.datasets
 import matplotlib.pyplot as plt
